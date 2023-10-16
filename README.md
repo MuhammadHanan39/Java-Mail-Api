@@ -13,9 +13,10 @@ There are some protocols that are used in JavaMail API.<br>
   <li>NNTP and others</li>
 </ul>
 <h3>JavaMail Architecture</h3>
-The java application uses JavaMail API to compose, send and receive emails. The JavaMail API uses SPI (Service Provider Interfaces) that provides the intermediatory services to the java application to deal with the different protocols. Let's understand it with the figure given below:
-<center>![image](https://github.com/MuhammadHanan39/Java-Mail-Api/assets/107320155/c742eeda-b5ec-4767-b61d-be4c5595e53a)
-</center>
+The java application uses JavaMail API to compose, send and receive emails. The JavaMail API uses SPI (Service Provider Interfaces) that provides the intermediatory services to the java application to deal with the different protocols. Let's understand it with the figure given below:<br>
+
+![Javamail1](https://github.com/MuhammadHanan39/Java-Mail-Api/assets/107320155/3f001259-c3a8-4939-ba49-8500906934c2)
+
 
 
 
