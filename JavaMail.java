@@ -9,8 +9,6 @@ public class JavaMail {
 
     public static void main(String[] args) {
 
-        String host="localhost";
-
         Properties properties=new Properties();
         properties.put("mail.smtp.host","smtp.gmail.com");
         properties.put("mail.smtp.auth","true");
