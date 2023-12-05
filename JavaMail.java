@@ -8,6 +8,7 @@ import java.util.Properties;
 public class JavaMail {
 
     public static void main(String[] args) {
+        boolean flag=false;
 
         Properties properties=new Properties();
         properties.put("mail.smtp.host","smtp.gmail.com");
@@ -18,7 +19,7 @@ public class JavaMail {
 
         //username and password
         String username="hannanshaikh150";
-        String password="";
+        String password="eviqxqdfpzzzvxgj";
         //Setting up the session
         Session session = Session.getDefaultInstance(properties, new Authenticator() {
             @Override
@@ -31,7 +32,7 @@ public class JavaMail {
         //After setting session Now create a Message
 
         String to="hannanshaikh150@gmail.com";
-        String from="moizs3700@gmail.com";
+        String from="hananshaikh20cs039@gmail.com";
         String subject="Sending email using Jakarta email api";
         String text="Hello I am using the jakarta email api service to send the email.";
 try{
@@ -46,14 +47,18 @@ try{
 
         //Sending email
         Transport.send(msg);
-
+        flag=true;
 
 
 }catch (Exception e){
     e.printStackTrace();
 }
 
-
+if(flag){
+    System.out.println("Email is successfully sent");
+}else{
+    System.out.println("Something went wrong");
+}
 
 
 
